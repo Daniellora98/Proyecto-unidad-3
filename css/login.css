@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( #001F3F,#ff0177) ;
+    padding-top: 5rem;   
+    font-family: Poppins;
+}
+
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .5) ;
+    border-radius: 10px;
+   
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+}
+/* selector para los elementos label */
+.contenedor .elemento label{
+    color: #FFF;
+}
+/* selector para elementos tipo input */
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #FFF;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 30px;
+}
+
+/* Selector contenedor , div de elemento , elementos de tipo input, solo tipo submit */
+.contenedor .elemento input[type = "button"]{ 
+    background-color: #ff0177;
+    border: none;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+}
+ 
+.contenedor .elemento input[type="text"]::hover,
+.contenedor .elemento input[type="password"]::hover {
+    color: #FFF; /* Cambia el color del texto del placeholder a blanco */
+}

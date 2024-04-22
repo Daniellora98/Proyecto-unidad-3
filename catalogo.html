@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/catalogo.css" />
+    <link rel="stylesheet" href="css/calculadora.css">
+    <title>Admin</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <img src="img/JdevStore.png" class="logo" alt="Logo" />
+    <div class="header__menu">
+      <nav class="header__nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" id="ocultarCatalogo">Catalogo de productos</a>
+        <a href="usuarios.html" id="ocultarUsuarios">Usuarios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="#" id="abrirCalculadora">Calculadora</a>
+        <a id="logout">Salir</a>
+      </nav>
+    </div>
+  </div>
+
+
+        <!-- Hero Call to action-->
+        <div class="hero">
+          <br />
+          <div class="container">   
+            <main>
+                <h2 class="mt-4 mb-4">Productos</h2>
+                <button id="agregar-producto" class="btn btn-primary mb-4">
+                  Agregar Producto
+                </button>
+                <table id="productos-table" class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>ID</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th>Acciones</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Aquí se insertarán los productos dinámicamente -->
+                  </tbody>
+                </table>
+              <!-- ... -->
+              <button
+                onclick="window.location.href = 'index.html';"
+                class="btn btn-dark">
+               Inicio
+              </button>
+            </main>
+          </div>
+      
+          </button>
+        </div>
+
+     
+        <footer class="footer">
+          <p class="footer__texto">JalomoDev Store - Todos los derechos Reservados 2024.</p>
+      </footer>
+     
+
+
+      <div class="calculator" id="calculadoraContainer" style="display: none;">
+        <button id="cerrarCalculadora">-</button>
+        <div class="display">0</div>
+        <div class="buttons">
+          <!-- Botones de la calculadora -->
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="operador">/</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="operador">*</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="operador">-</button>
+          <button>0</button>
+          <button class="operador">+</button>
+          <button class="operador">C</button>
+          <button class="operador yellow">=</button>
+    
+        </div>
+    
+      
+    <!-- Tu script JavaScript -->
+    <script src="script.js"></script>
+    <script src="/js/catalogo.js"></script>
+    <script src="js/calculadora.js"> </script>
+  </body>
+</html>
